@@ -58,7 +58,6 @@ export const generatePreviewPDF = async (req, res) => {
       console.warn(`Failed to load resource: ${request.url()}`);
     });
 
-    // Set viewport to A4 size in pixels at 72 DPI (595 × 842 points)
     await page.setViewport({
       width: 595,
       height: 842,
